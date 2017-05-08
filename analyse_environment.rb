@@ -1,6 +1,6 @@
 require 'set'
 
-lines = File.read("transport.txt").lines
+lines = File.read("data/environment.txt").lines
 
 seen_terms = Set.new
 
@@ -12,5 +12,3 @@ lines.shuffle.each do |line|
 
   puts seen_terms.count
 end
-
-puts seen_terms.sort.inspect
